@@ -1,38 +1,31 @@
 grpc Kotlin example
 ==============================================
 
-The examples require grpc-java to already be built. You are strongly encouraged
-to check out a git release tag, since there will already be a build of grpc
-available. Otherwise you must follow COMPILING.md.
 
 You may want to read through the
 [Quick Start Guide](https://grpc.io/docs/quickstart/java.html)
 before trying out the examples.
 
-To build the examples, run in this directory:
+To build:
 
 ```
 $ ./gradlew installDist
 ```
 
-This creates the scripts `hello-world-server`, `hello-world-client`,
-`route-guide-server`, and `route-guide-client` in the
-`build/install/examples/bin/` directory that run the examples. Each
-example requires the server to be running before starting the client.
+This creates the scripts `rdr-server`, `rdr-client`,
+The server needs to be running before the client.
 
 For example, to try the hello world example first run:
 
 ```
-$ ./build/install/examples/bin/hello-world-server
+$ ./build/install/rdr/bin/rdr-server
 ```
 
 And in a different terminal window run:
 
 ```
-$ ./build/install/examples/bin/hello-world-client
+$ ./build/install/rdr/bin/rdr-client
 ```
-
-That's it!
 
 Please refer to gRPC Java's [README](../README.md) and
 [tutorial](https://grpc.io/docs/tutorials/basic/java.html) for more
